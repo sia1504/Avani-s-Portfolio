@@ -1,3 +1,3 @@
-# Avani's POrtfolio
+# Avani's Portfolio
 
 Hi, I am Avani
