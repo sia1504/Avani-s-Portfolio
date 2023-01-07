@@ -1,3 +1,7 @@
-body{
-    color: red;
+.not-bullet{
+    list-style: none;
+}
+
+.no-underline{
+    text-decoration: none;
 }
