@@ -1,7 +1,19 @@
 .not-bullet{
     list-style: none;
 }
-
 .no-underline{
-    text-decoration: none;
+    text-decoration:none;
+}
+.navigation-container{
+    background-color: #60a5fa;
+    color: white;
+}
+.list-inline{
+    display: inline;
+    padding-right: 2.5rem ;
+}
+
+.link-tag {
+    color: white;
+    text-decoration:none;
 }
