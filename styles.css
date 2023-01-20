@@ -1,17 +1,35 @@
-.not-bullet{
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
 }
-.no-underline{
-    text-decoration:none;
+:root{
+    --primary-color: #0ea5e9;
 }
 .navigation{
     background-color: #0ea5e9;
-    color: black;
+    color: white;
+    border-bottom-left-radius: 1rem ;
 }
-.navigation .nav-pills{
-    text-align: right;
+.nav-brand{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.not-bullet{
+    list-style: none;
+}
+.nav-pills{
+   text-align: right;
+
+}
+.list-inline{
+    display: inline;
+    padding-right: 1.5rem;
+}
+.navigation .nav-brand{
+    font-family: 'Roboto', sans-serif;
 }
 
-.navigation .link-tag{
+.link-tag{
     color: white;
-}
+    text-decoration: none;
+} 
