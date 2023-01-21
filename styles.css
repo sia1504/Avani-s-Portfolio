@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 :root{
     --primary-color: #10b981;
@@ -11,8 +12,7 @@ body{
     border-bottom-left-radius: 1rem ;
 }
 .nav-brand{
-    font-weight: bold;
-    font-size: 1.1rem;
+width: 80px;
 }
 .not-bullet{
     list-style: none;
@@ -41,6 +41,7 @@ body{
     max-width:350px;
     display: block;
     margin: auto;
+    padding-bottom: 2rem;
    }
    .hero-heading{
     text-align: center;
@@ -48,10 +49,16 @@ body{
    }
    .hero-highlighted{
     color: #10b981;
+    font-weight: bold;
+    font-size: 3rem;
    }
 .tech{
     background-color: whitesmoke;
     text-align: center;
+}
+.projects{
+    text-align: center;
+    padding: 2rem;
 }
 .sec-link{
     text-decoration: none;
@@ -63,15 +70,20 @@ body{
     padding: 2rem;
     padding-top: 2rem;
     text-align: center;
+    background-color: whitesmoke;
 }
- 
+.heading{
+    padding-bottom: 2rem;
+}
 
 
 .foot{
-    background-color:#10b981;
-    padding: 2rem;
-    text-align: center;
-border-top-right-radius: 1rem;}
+background-color:#10b981;
+text-align: center;
+padding: 2rem;
+border-top-right-radius: 1rem;   
+}
+   
 .social-link{
 list-style: none;
 }
@@ -84,5 +96,6 @@ list-style: none;
     padding-bottom: 2rem;
 }
 .socio-image{
-    max-width: 70px;
+    max-width: 80px;
+    gap: 2rem;
 }
