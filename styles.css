@@ -1,38 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Merriweather:ital,wght@1,300&family=Raleway:wght@300&family=Roboto:wght@300&family=Sofia+Sans:wght@300&display=swap');
 body{
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Raleway', sans-serif;
 }
 :root{
-    --primary-color: #10b981;
+    --primary-color: #a3e635;
 }
 .navigation{
-    background-color: #10b981;
-    color: white;
+    color: black;
     border-bottom-left-radius: 1rem ;
+}
+.navigation-container{
+    display: flex;
+    align-items: center;
+}
+.navigation-container .nav-brand{
+    max-height: 36px;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+.navigation-container .nav-pills{
+    text-align: right;
+    margin-left: auto;
 }
 .nav-brand{
 width: 80px;
 }
+.flex{
+    display: flex;
+}
 .not-bullet{
     list-style: none;
 }
-.nav-pills{
-   text-align: right;
+.navigation-container .nav-pills{
+    align-items: right;
 
 }
-.list-inline{
+a:hover{
+    color: #84cc16;
+}
+a:active{
+    color: #a3e635;
+}
+.navigation-container .nav-pills .list-inline{
+
     display: inline;
     padding-right: 1.5rem;
 }
 .navigation .nav-brand{
     font-family: 'Roboto', sans-serif;
 }
-
-.link-tag{
-    color: white;
+.link-tag-home{
+    color: black;
     text-decoration: none;
+    font-size: 1.5rem;
+}
+.link-tag{
+    color: black;
+    text-decoration: none;
+    size: 4rem;
+    font-size: 1.5rem;
 } 
+.link-tag-last{
+    border-radius: 12px;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    color: white;
+    background-color: #a3e635;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
 .hero{
     padding: 2rem;
    
@@ -42,13 +79,14 @@ width: 80px;
     display: block;
     margin: auto;
     padding-bottom: 2rem;
+    align-items: center;
    }
    .hero-heading{
     text-align: center;
     color: #6b7280;
    }
    .hero-highlighted{
-    color: #10b981;
+    color: #a3e635;
     font-weight: bold;
     font-size: 3rem;
    }
@@ -62,7 +100,7 @@ width: 80px;
 }
 .sec-link{
     text-decoration: none;
-    color: #10b981;
+    color: #a3e635;
     font-weight: bold;
 
 }
@@ -78,7 +116,7 @@ width: 80px;
 
 
 .foot{
-background-color:#10b981;
+background-color:#a3e635;
 text-align: center;
 padding: 2rem;
 border-top-right-radius: 1rem;   
