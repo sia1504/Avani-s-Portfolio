@@ -101,7 +101,11 @@ a:active{
     display: inline-block;
     grid-template-columns: repeat(3,minmax(0,1fr));
     display: grid;
+   margin-left: auto;
+   margin-right: auto;
     gap: 1rem;
+    width: 1200px;
+    align-items: center;
 }
 .tech-stack-main .tech-stack{
  background-color: whitesmoke;
@@ -109,6 +113,7 @@ a:active{
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  width: 300px;
 }
 .tech-stack-main .tech-stack:hover{
     border-style: groove;
