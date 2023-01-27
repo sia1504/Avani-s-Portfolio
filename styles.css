@@ -64,7 +64,7 @@ a:active{
 .link-tag-last{
     border-radius: 12px;
     padding-left: 1.1rem;
-    padding-right: 1.1rem;
+    padding-right: 2rem;
     color: white;
     background-color: #a3e635;
     text-decoration: none;
@@ -79,11 +79,14 @@ a:active{
     display: block;
     margin: auto;
     padding-bottom: 2rem;
+    padding-top: 1.5rem;
     align-items: center;
    }
    .hero-heading{
     text-align: center;
     color: #6b7280;
+    overflow-y: auto;
+    overflow-x: hidden;
    }
    .hero-highlighted{
     color: #a3e635;
@@ -91,8 +94,35 @@ a:active{
     font-size: 3rem;
    }
 .tech{
-    background-color: whitesmoke;
+
     text-align: center;
+}
+.tech-stack-main{
+    display: inline-block;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    display: grid;
+    gap: 1rem;
+}
+.tech-stack-main .tech-stack{
+ background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.tech-stack-main .tech-stack:hover{
+    border-style: groove;
+    border-color:#a3e635;
+    -webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.tech-stack .tech-pills{
+  padding-left: 1.1rem;
 }
 .projects{
     text-align: center;
@@ -116,10 +146,10 @@ a:active{
 
 
 .foot{
-background-color:#a3e635;
+border-top: 1px solid;
+border-width: 50%;
 text-align: center;
-padding: 2rem;
-border-top-right-radius: 1rem;   
+padding: 2rem; 
 }
    
 .social-link{
