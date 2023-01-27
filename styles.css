@@ -6,6 +6,16 @@ body{
 :root{
     --primary-color: #a3e635;
 }
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);
+        border-radius: 0.5rem;
+        }
 .navigation{
     color: black;
     border-bottom-left-radius: 1rem ;
@@ -150,8 +160,13 @@ display: flex;
     padding: 2rem;
     padding-top: 2rem;
     text-align: center;
+
     background-color: whitesmoke;
 }
+.hero-heading-blog{
+color: #6b7280;
+}
+
 .heading{
     padding-bottom: 2rem;
 }
