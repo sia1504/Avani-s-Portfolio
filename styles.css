@@ -151,6 +151,10 @@ display: flex;
     text-align: center;
     padding: 2rem;
 }
+.text_project{
+    text-align: center;
+    
+}
 .sec-link{
     text-decoration: none;
     color: #a3e635;
