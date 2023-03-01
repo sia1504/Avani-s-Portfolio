@@ -150,6 +150,7 @@ display: flex;
 .projects{
     text-align: center;
     padding: 2rem;
+    color: black;
 }
 .text_project{
     text-align: center;
