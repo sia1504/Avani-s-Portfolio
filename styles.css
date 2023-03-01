@@ -16,13 +16,15 @@ body{
         background-color: var(--primary-color);
         border-radius: 0.5rem;
         }
-.navigation{
+.navigation{    
     color: black;
     border-bottom-left-radius: 1rem ;
 }
 .navigation-container{
+    overflow: hidden;
     display: flex;
     align-items: center;
+    margin: auto;
 }
 .navigation-container .nav-brand{
     max-height: 36px;
@@ -73,9 +75,9 @@ a:active{
     font-size: 1.3rem;
 } 
 .link-tag-last{
-    border-radius: 12px;
     padding-left: 1.1rem;
-    padding-right: 2rem;
+    padding-right: 1.1rem;
+    border-radius: 32px;
     color: white;
     background-color: #a3e635;
     text-decoration: none;
@@ -109,15 +111,14 @@ a:active{
     text-align: center;
 }
 .tech-stack-main{
-    display: inline-block;
-    grid-template-columns: repeat(3,minmax(0,1fr));
+   
     display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
    margin-left: auto;
    margin-right: auto;
     width: 1200px;
     gap: 1rem;
-   
-    align-items: center;
+   align-items: center;
 }
 .tech-stack-main .tech-stack{
    
@@ -156,6 +157,10 @@ display: flex;
     font-weight: bold;
 
 }
+.blogs-main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .blogs-list{
     padding: 2rem;
     padding-top: 2rem;
@@ -166,12 +171,32 @@ display: flex;
 .hero-heading-blog{
 color: #6b7280;
 }
+.blogs{
+    display: grid;
+    padding-left:2rem;
+    padding-right:2rem;
+    align-items: center;
+
+}
+.blogs .blog-no{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    
+}
 
 .heading{
     padding-bottom: 2rem;
 }
 
+.faded-text{
+    user-select: none;
+    font-size: 7rem;
+    color:rgb(231, 231, 231);
+    bottom:-16%;
+    top:-5%;
+    font-weight: bold;
 
+}
 .foot{
 border-top: 1px solid;
 border-width: 50%;
@@ -184,6 +209,11 @@ list-style: none;
 }
 .socio{
     padding-left: 0.05rem;
+}
+.socio:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .list-inline-f{
     display: inline;
