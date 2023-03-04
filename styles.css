@@ -48,13 +48,41 @@ width: 80px;
     align-items: right;
 
 }
+a{
+    color:#a3e635;
+}
 a:hover{
     color: #84cc16;
-    transition: background-color 0.5s;
+    font-weight: bold;
+    transition: background-color 0.8s; 
+
 }
 a:active{
     color: #a3e635;
 }
+.navigation-container .nav-pills .list-inline .link-tag{
+    display: inline-block;
+  position: relative;
+  color:#84cc16;
+}
+.navigation-container .nav-pills .list-inline .link-tag::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#84cc16;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navigation-container .nav-pills .list-inline .link-tag:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .navigation-container .nav-pills .list-inline{
 
     display: inline;
@@ -63,13 +91,9 @@ a:active{
 .navigation .nav-brand{
     font-family: 'Roboto', sans-serif;
 }
-.link-tag-home{
-    color: black;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-.link-tag{
-    color: black;
+
+.navigation-container .nav-pills .list-inline .link-tag{
+    color:#84cc16;
     text-decoration: none;
     size: 4rem;
     font-size: 1.3rem;
