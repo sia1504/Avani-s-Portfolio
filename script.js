@@ -1,3 +1,4 @@
-function readblog() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
-  }
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
