@@ -2,46 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Merriweather:ital,wght@1,300&family=Raleway:wght@300&family=Roboto:wght@300&family=Sofia+Sans:wght@300&display=swap');
 body{
     font-family: 'Raleway', sans-serif;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
-.dark-mode{
-    background-color: #15181f;
-    color: #e5e5e5;
-}
-.dark-mode #toggle{
-    background-color: #ffffff;
-}
-.dark-mode #toggle:after{
-    background-color: transparent;
-    box-shadow: 10px 10px #15181f;
-    top: -4px;
-    left: 30px;
-}
-  #toggle{
-    -webkit-appearance: none;
-    appearance: none;
-    height: 40px;
-    width: 75px;
-    background-color: #15181f;
-    position: absolute;
-    right: 0;
-    border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-}
-#toggle:after{
-    content: "";
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-color: #ffffff;
-    top: 5px;
-    left: 7px;
-    border-radius: 50%;
+    display:block;
 }
 
 :root{
@@ -57,27 +18,43 @@ body{
         background-color: var(--primary-color);
         border-radius: 0.5rem;
         }
+
+@media only screen and (max-width: 600px) {
+.navigation-container {
+width: 100%;
+}
+
+.navigation-container .nav-pills {
+font-size: 0.2rem;
+}
+}
+          
 .navigation{    
     color: black;
     display: inline;
     border-bottom-left-radius: 1rem ;
 }
 .navigation-container{
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     margin: auto;
 }
 .navigation-container .nav-brand{
-    max-height: 36px;
+    max-height: 5rem;
     cursor: pointer;
     padding-left: 2rem;
 }
 .navigation-container .nav-pills{
+    min-height: 3rem;
     text-align: right;
     margin-left: auto;
-    padding-left: ;
+    gap:1rem;
+    padding-right: 1.875rem ;
+    font-size: 1rem;
 }
+
 .nav-brand{
 width: 80px;
 }
@@ -96,7 +73,6 @@ a{
 }
 a:hover{
     color: #84cc16;
-    font-weight:bolder;
     transition: background-color 0.8s; 
 
 }
@@ -104,7 +80,7 @@ a:active{
     color: #a3e635;
 }
 .navigation-container .nav-pills .list-inline .link-tag{
-    display: inline-block;
+  display: inline-block;
   position: relative;
   color:#84cc16;
 }
@@ -113,7 +89,7 @@ a:active{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color:#84cc16;
@@ -155,7 +131,8 @@ a:active{
    
 }
 .hero-img{
-    max-width:350px;
+    min-width: 10rem;
+    max-width:20rem;
     display: block;
     margin: auto;
     padding-bottom: 2rem;
@@ -173,6 +150,35 @@ a:active{
     font-weight: bold;
     font-size: 3rem;
    }
+.about{
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    padding-top:8rem ;
+    padding-bottom: 15rem;
+    margin: auto;
+}
+.img_about{
+
+height: 263px;
+padding: 5rem;
+padding-left: 7rem;
+
+}
+.img_about .img_me{
+   
+    border-radius: 526px;
+   
+}
+.text_about{
+   
+    gap: 3rem;
+    text-align: left;
+    justify-content: center;
+    padding-right: 7rem; 
+    width:fit-content;
+}
 .tech{
 
     text-align: center;
